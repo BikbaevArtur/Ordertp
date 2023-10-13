@@ -6,7 +6,7 @@ public class OrderTSP {
 
 
     public void orderForm() {
-        Read read = new Read("C:\\Users\\1\\IdeaProjects\\Ordertp\\Ostatok.xlsx");
+        Read read = new Read("C:\\Users\\1\\IdeaProjects\\Ordertp\\Ostatok.xlsx"); // Открываем файл для чтения
         ArrayList<Object> exel = read.getExel();
         orderTSP.add(0, exel.get(0));
         if ((double) exel.get(1) < tsp75) orderTSP.add(1, tsp75 - (double) exel.get(1));
@@ -61,7 +61,6 @@ public class OrderTSP {
         else orderTSP.add(33,0);
 
     }
-
 
 
     public double getTsp75() {
@@ -203,8 +202,16 @@ public class OrderTSP {
     public ArrayList<Object> getOrderTSP() {
         return orderTSP;
     }
+
+    /**
+     * Список для заявки
+     */
     private ArrayList<Object> orderTSP = new ArrayList<>(34);
+    /*
+    Минимальные остатки для создание заявки
+     */
     private double tsp75 = 20.0;
+
     private double tsp150 = 25.0;
     private double tsp225 = 20.0;
     private double tsp300 = 20.0;
