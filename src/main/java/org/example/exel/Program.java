@@ -4,16 +4,30 @@ import java.util.ArrayList;
 
 public class Program {
     public static void main(String[] args) {
-       // Read read = new Read("C:\\Users\\1\\IdeaProjects\\untitled\\Ostatok.xlsx");
-       // read.printExel();
 
-        OrderTSP order = new OrderTSP();
-        order.orderForm();
-        ArrayList<Object> order1 = order.getOrderTSP();
-        for (Object i :order1
+        OrderTSP orderTSP = new OrderTSP();
+        orderTSP.orderForm();
+        ArrayList<Object> ordersTSP = orderTSP.getOrderTSP();
+        for (Object order :ordersTSP) {
+            System.out.println(order);
+
+        }
+
+        OrderTSP180 orderTSP180 = new OrderTSP180();
+        orderTSP180.orderForm();
+        ArrayList<Object>ordersTSP180 = orderTSP180.getOrderTSP180();
+        for (Object order : ordersTSP180
              ) {
-            System.out.println(i);
+            System.out.println(order);
+        }
 
+
+        OrderSTSP orderSTSP = new OrderSTSP();
+        orderSTSP.orderForm();
+        ArrayList<Object>ordersSTST = orderSTSP.getOrderSTSP();
+        for (Object order : ordersSTST
+        ) {
+            System.out.println(order);
         }
     }
 }

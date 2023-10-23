@@ -210,22 +210,22 @@ public class OrderTSP {
     /*
     Минимальные остатки для создание заявки
      */
-    private double tsp75 = 20.0;
+    private double tsp75 = 25.0;
 
     private double tsp150 = 25.0;
-    private double tsp225 = 20.0;
-    private double tsp300 = 20.0;
+    private double tsp225 = 15.0;
+    private double tsp300 = 15.0;
     private double tsp375= 15.0;
-    private double tsp450 = 20.0;
-    private double tsp525 = 15.0;
-    private double tsp600 = 15.0;
-    private double tsp675 = 10.0;
+    private double tsp450 = 15.0;
+    private double tsp525 = 10.0;
+    private double tsp600 = 10.0;
+    private double tsp675 = 5.0;
     private double tsp750 = 15.0;
-    private double tsp900 = 15.0;
-    private double tsp1050 = 10.0;
-    private double tsp1200 = 5.0;
+    private double tsp900 = 10.0;
+    private double tsp1050 = 8.0;
+    private double tsp1200 = 4.0;
     private double tsp1350 = 4.0;
-    private double tsp1500 = 5.0;
+    private double tsp1500 = 4.0;
     private double tsp1800 = 4.0;
     private double tsp2250 = 4.0;
 
